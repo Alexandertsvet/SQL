@@ -1,8 +1,4 @@
 import scrapy
-from scrapy.http.request import Request
-from scrapy.loader import ItemLoader
-from typing import TYPE_CHECKING, Any, cast
-from image_extract.items import ImageExtractItem
 
 
 class ImagespyderSpider(scrapy.Spider):
