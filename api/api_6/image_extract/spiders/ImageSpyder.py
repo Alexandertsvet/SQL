@@ -14,8 +14,6 @@ class ImagespyderSpider(scrapy.Spider):
         return [scrapy.Request(self.start_urls[0], callback = self.parse_category)]
 
     def parse_category(self, response):
-        print("+++++++++++++++++")
-        print(self.start_urls)
         cat_list = {}
         cat_links = {}
         selector = scrapy.selector.Selector(response=response)
